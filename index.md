@@ -1,6 +1,6 @@
 # Kubernetes Integration with python CGI
 
-Task- Portal to run kubernetes commands
+<font size="20">Task- Portal to run kubernetes commands </font>
 
 ## Kubernetes- 
 Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
@@ -25,15 +25,15 @@ CGI can be easily created using cgi-bin of httpd. The files which has permission
 
 After seting up the webserver, Test the working using the url(http://<instance_ip>/kub.html) in any browser- Here are sample inputs and the output obtained from the server over kubernetes cluster. 
 
-#### 1. First screen that appears-
+##### 1. First screen that appears-
    ![Sample Output](1.PNG)
-#### 2. Executing a command to run pod with podname "pod1" and "httpd" image
+##### 2. Executing a command to run pod with podname "pod1" and "httpd" image
    ![creating pod](2.PNG)
-#### 3. Creating a deployment with name "pod1" and using "httpd" image
+##### 3. Creating a deployment with name "pod1" and using "httpd" image
    ![creating deployment](3.PNG)
-#### 4. Exposing the deployment "pod1" on port 80 using NodePort type
+##### 4. Exposing the deployment "pod1" on port 80 using NodePort type
    ![exposing deployment](4.PNG) 
-#### 5. Scaling the depolyment "pod1" with 3 replicas
+##### 5. Scaling the depolyment "pod1" with 3 replicas
    ![scaling deployment](5.PNG)
-#### 6. Deleting everything
+##### 6. Deleting everything
    ![Deleting](6.PNG)
