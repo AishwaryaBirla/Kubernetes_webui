@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+## Kubernetes Integration with python CGI
 
-You can use the [editor on GitHub](https://github.com/AishwaryaBirla/Kubernetes_webui/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Task- Portal to run kubernetes commands
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Kubernetes- 
+Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
 
-### Markdown
+### Advantages of kubernetes- 
+1. Automated rollouts and rollbacks
+2. Service discovery and load balancing
+3. Storage orchestration
+4. Secret and configuration management
+5. Automatic bin packing
+6. Batch execution
+7. IPv4/IPv6 dual-stack
+8. Horizontal scaling
+9. Self-healing
+10. Designed for extensibility
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## HTTPD-
+The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows. The goal of this project is to provide a secure, efficient and extensible server that provides HTTP services in sync with the current HTTP standards.
 
-```markdown
-Syntax highlighted code block
+The Common Gateway Interface, or CGI, is a set of standards that define how information is exchanged between the web server and a custom script.
+CGI can be easily created using cgi-bin of httpd. The files which has permission in server to be executed are made executable and put in folder- /var/www/cgi-bin 
 
-# Header 1
-## Header 2
-### Header 3
+After seting up the webserver, Test the working using the url(http://<instance_ip>/kub.html) in any browser- Here are sample inputs and the output obtained from the server over kubernetes cluster. 
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AishwaryaBirla/Kubernetes_webui/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1. First screen that appears-
+   ![Sample Output](1.png)
+2. Executing a command to run pod with podname "pod1" and "httpd" image
+   ![creating pod](2.png)
+3. Creating a deployment with name "pod1" and using "httpd" image
+   ![creating deployment](3.png)
+4. Exposing the deployment "pod1" on port 80 using NodePort type
+   ![exposing deployment](4.png) 
+5. Scaling the depolyment "pod1" with 3 replicas
+   ![scaling deployment](5.png)
+6. Deleting everything
+   ![Deleting](6.png)
