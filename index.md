@@ -1,6 +1,6 @@
 # Kubernetes Integration with python CGI
 
-<font size="10">Task- Portal to run kubernetes commands </font>
+<font size="+2">Task- Portal to run kubernetes commands </font>
 
 ## Kubernetes- 
 Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
