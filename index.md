@@ -1,6 +1,6 @@
 # Kubernetes Integration with python CGI
 
-<font size="20">Task- Portal to run kubernetes commands </font>
+<font size="10">Task- Portal to run kubernetes commands </font>
 
 ## Kubernetes- 
 Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
@@ -23,7 +23,8 @@ The Apache HTTP Server Project is an effort to develop and maintain an open-sour
 The Common Gateway Interface, or CGI, is a set of standards that define how information is exchanged between the web server and a custom script.
 CGI can be easily created using cgi-bin of httpd. The files which has permission in server to be executed are made executable and put in folder- /var/www/cgi-bin 
 
-After seting up the webserver, Test the working using the url(http://<instance_ip>/kub.html) in any browser- Here are sample inputs and the output obtained from the server over kubernetes cluster. 
+#### Task Execution
+After seting up the webserver, test the working using the url(http://<instance_ip>/kub.html) in any browser- Here are sample inputs and the output obtained from the server over kubernetes cluster. 
 
 ##### 1. First screen that appears-
    ![Sample Output](1.PNG)
